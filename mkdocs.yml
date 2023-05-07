@@ -1,3 +1,86 @@
-site_name: My Docs
+site_name: TesseraeOnto
+site_url: https://tsrproject.github.io/TSROnto/
+
+
+nav:
+    - Home: index.md
+    - Digital competencies: competencies.md
+    - Ethics: ethics.md
+    - Care: care.md
+    - Bibliography: biblio.md
+
+site_author: various
+site_description: documentation for ontologies on co-design practices research
+
+
+repo_name: TSROnto
+repo_url: https://github.com/TSRProject/TSROnto/
+
 theme:
   name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.instant
+    - navigation.tracking
+    - navigation.expand
+    - navigation.path
+    - navigation.prune
+    - navigation.indexes
+    - navigation.footer
+    - toc.integrate
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+    - content.tooltips
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: amber
+      accent: deep purple
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: amber
+      accent: deep purple
+
+  markdown_extensions:
+    - pymdownx.highlight:
+      anchor_linenums: true
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - admonition
+    - pymdownx.arithmatex:
+        generic: true
+    - footnotes
+    - pymdownx.details
+    - pymdownx.superfences
+    - pymdownx.mark
+    - attr_list
+    - md_in_html
+
+
+
+
+extra:
+  version:
+    provider: mike
+
+
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js #?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+plugins:
+  - search
